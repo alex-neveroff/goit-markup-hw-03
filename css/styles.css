@@ -1,0 +1,224 @@
+/* Загальні стилі */
+
+:root {
+  /* Основний колір */
+  --main-color: #757575;
+  /* Допоміжний колір (герой, ховер на синіх кнопках, бекграунд) */
+  --secondary-color: #ffffff;
+  /* Колір заголовків */
+  --header-color: #212121;
+  /* Ультрачорний для логотипу */
+  --logo-black-color: #000000;
+  /* Синій для логотипу, кнопок та ховеру */
+  --hover-blue-color: #2196f3;
+  /* Синій для ховеру кнопок фільтра */
+  --button-hover-color: #188ce8;
+  /* Колір бекграунду у футері та герої */
+  --footer-bcg: #2f303a;
+  /* Колір бекграунду у секції команди */
+  --secondary-bcg: #f5f4fa;
+  /* колір тексту в контактах футера */
+  --adress-footer-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.list {
+  list-style-type: none;
+}
+
+/* 
+Для header */
+
+.header .link:hover,
+.header .link:focus {
+  color: var(--hover-blue-color);
+}
+
+.logo {
+  color: var(--hover-blue-color);
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo > .logo-header {
+  color: var(--logo-black-color);
+}
+
+.header-nav,
+.header-contacts {
+  font-weight: 500;
+  line-height: 1, 43;
+  letter-spacing: 0.02em;
+}
+.header-nav .link {
+  color: var(--header-color);
+}
+
+.header-nav .link.current {
+  color: var(--hover-blue-color);
+}
+
+/* Для героя */
+
+.hero {
+  background-color: var(--footer-bcg);
+  color: var(--secondary-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero .button {
+  background-color: var(--hover-blue-color);
+  color: var(--secondary-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--button-hover-color);
+  color: var(--secondary-color);
+}
+
+/* Заховані заголовки */
+
+.portfolio-title,
+.features-title {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+/* Секція особливостей */
+
+.features-sub-title {
+  color: var(--header-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-text {
+  line-height: 1.71;
+}
+
+/* Секція команди */
+
+.work-title,
+.team-title {
+  color: var(--header-color);
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team {
+  background-color: var(--secondary-bcg);
+}
+
+.team .card {
+  background-color: var(--secondary-color);
+}
+
+.team-sub-title {
+  color: var(--header-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.19px;
+  text-align: center;
+}
+
+/* Для фільтра портфоліо*/
+
+.portfolio-filter .button {
+  color: var(--header-color);
+  background-color: var(--secondary-bcg);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.portfolio-filter .button:hover,
+.portfolio-filter .button:focus {
+  background-color: var(--hover-blue-color);
+  color: var(--secondary-color);
+}
+
+.portfolio-filter .button.current {
+  background-color: var(--hover-blue-color);
+  color: var(--secondary-color);
+}
+
+/* Секція портфоліо */
+
+.portfolio-sub-title {
+  color: var(--header-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* 
+footer */
+
+.footer {
+  background-color: var(--footer-bcg);
+}
+.logo > .logo-footer {
+  color: var(--secondary-color);
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--hover-blue-color);
+}
+
+.footer .list {
+  color: var(--secondary-color);
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.footer .contacts {
+  color: var(--adress-footer-color);
+}

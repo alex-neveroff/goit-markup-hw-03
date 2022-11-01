@@ -20,7 +20,9 @@
   /* колір тексту в контактах футера */
   --adress-footer-color: rgba(255, 255, 255, 0.6);
   /* колір рамок портфоліо */
-  --border-color: #eeeeee;
+  --cards-border-color: #eeeeee;
+  /* колір рамки шапки */
+  --header-border-color: #ececec;
 }
 
 body {
@@ -124,6 +126,10 @@ h3 {
 .header-contacts .link:hover,
 .header-contacts .link:focus {
   color: var(--hover-blue-color);
+}
+
+.header {
+  border-bottom: solid 1px var(--header-border-color);
 }
 
 /* Для героя */
@@ -277,7 +283,17 @@ h3 {
 
 /* Для фільтра портфоліо*/
 
+.portfolio-filter.flex-container {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-filter .filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 .portfolio-filter .button {
+  padding: 6px 22px;
+
   color: var(--header-color);
   background-color: var(--secondary-bcg);
 
@@ -287,6 +303,9 @@ h3 {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+
+  border-radius: 4px;
+  border: none;
 }
 
 .portfolio-filter .button:hover,
@@ -296,13 +315,15 @@ h3 {
 }
 
 .portfolio-filter .button.current {
+  padding: 6px 25px;
+
   background-color: var(--hover-blue-color);
   color: var(--secondary-color);
 }
 
 /* Секція портфоліо */
 
-.portfolio .list {
+.portfolio .cards-list {
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -317,9 +338,9 @@ h3 {
   padding-left: 24px;
   padding-right: 24px;
 
-  border-left: 1px solid var(--border-color);
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--cards-border-color);
+  border-right: 1px solid var(--cards-border-color);
+  border-bottom: 1px solid var(--cards-border-color);
 }
 
 .portfolio-sub-title {

@@ -258,7 +258,7 @@ h3 {
 }
 
 .team-item {
-  flex-basis: calc((100%-90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
   padding-bottom: 30px;
 
   border-bottom-left-radius: 4px;
